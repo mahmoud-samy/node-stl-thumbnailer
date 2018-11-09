@@ -1,6 +1,21 @@
 # node-stl-thumbnailer
 Nodejs thumbnailing service for 3D STL files. Creates beautifully rendered png and jpeg output server-side with no GPU from ASCII and Binary STL's.
 
+## Docker
+
+* Build docker image
+```bash
+docker build --rm -f "Dockerfile" -t node-stl-thumbnailer:latest .
+```
+
+* Run a container
+```bash
+docker run --rm -d -p 3000:3000/tcp node-stl-thumbnailer:latest
+```
+
+* Open demo page [http://localhost:3000](http://localhost:3000)
+
+
 ## Installation
 ```npm install --save node-stl-thumbnailer```
 
